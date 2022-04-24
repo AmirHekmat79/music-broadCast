@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./styles/style.css" />
+    <link rel="Stylesheet" href="./styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Fjalla+One&display=swap"
+          rel="stylesheet">
+    <link rel="title icon" href="./images/logo.jpg"/>
+    <title>Listen to nice Musics</title>
+</head>
+<body  onload = "favoriteThemeHandler()">
+    <!--Header-->
+    <header>
+        <nav class="navbar navbarStyle navbar-expand-lg fixed-top bg-dark py-3">
+            <a style="text-decoration : none ;font-size:15px"  class="navbar-brand text-white badge badge-pill badge-danger mr-5"> <i onclick = 'changeThemeHandler()' class="Icon fas fa-moon text-light mr-3"></i>The Sound Of Musics</a>
+            <button class="navbar-toggler" data-toggle="collapse"  data-target="#myCollapse"> 
+                <div class="lh-1 bg-light"></div>
+                <div class="lh-2 bg-light"></div>
+                <div class="lh-3 bg-light"></div>
+            </button>
+            <div id="myCollapse" class="collapse navbar-collapse">
+            <ul class="list-unstyled navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link navbarLink">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link navbarLink">PODCASTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link  navbarLink mr-4 ">Download App</a></li>
+                    <li class="d-flex align-items-center">
+                        <form  class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="search for the music" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--End Of Header-->
+    <br/>
+    <br/>
+    <!--Banner-->
+    <section class="section1 banner py-5">
+        <div class="container p-3">
+            <div class="row justify-content-center text-center">
+                <div class="col">
+                    <h3 class="title text-light mb-2">life goes on with music</h3>
+                   <div class="d-flex justify-content-center align-items-center">
+                      <img  onclick="previousPictureHandler()" class="sliderIcons img-fluid rounded-circle mr-3" src="./images/backward.png"/>
+                      <img class="bgImage img-fluid rounded" style="width:900px ; height:400px " src="./images/3.jpg"/>
+                      <img  onclick="nextPictureHandler()" class="img-fluid sliderIcons ml-3 rounded-circle" src="./images/forward.png"/>
+                   </div>
+                </div>
+            </div>
+        </div>
+     <!--End Of Banner-->
+       <!--music text content-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="Content text-center text-light">The Sounds Of Music is the one-stop music app for the latest to the greatest songs that you love. Play your favourite music online for free or download mp3. Enjoy from over 60 , English, Regional, Latest, Old songs and more.</p>
+                </div>
+            </div>
+        </div>
+      <!--End Of music text content-->
+    </section>
+    <!--Music Lists-->
+<section class="section2 banner  py-4">
+ <div class="container">
+    <h4 class="h4Element text-center text-light">Top Songs</h4>
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-md-4 col-sm-6 col-xs-6 my-2 hoverEffect">
+                <div class="card">
+                    <img class="card-img-top ImageCard" src="./images/10.jpg" alt="album cover" />
+                    <div class="card-img-overlay  d-flex flex-column justify-content-between align-items-center text-center">
+                        <div style="font-size : 15px" class="badge badge-dark badge-pill text-light my-2">Halsey</div>
+                        <button class="playButton btn btn-light" data-name="Halsey"><i class="fas fa-play "></i></button>
+                        <audio src="./songs/Halsey.mp3" data-name="Halsey"></audio>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 my-3 hoverEffect">
+            <div class="card">
+                <img class="card-img-top ImageCard" src="./images/8.jpg" alt="album cover"/> 
+                <div class="card-img-overlay d-flex flex-column justify-content-between align-items-center text-center">
+                    <div style="font-size : 15px" class=" badge badge-dark badge-pill text-light my-2">Katy perry</div>
+                    <button class="playButton btn btn-light" data-name="Katy perry"><i class="fas fa-play "></i></button>
+                    <audio src="./songs/Katy Perry.mp3" data-name="Katy perry"></audio>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 my-3 hoverEffect">
+            <div class="card">
+                <img class="card-img-top ImageCard" src="./images/12.jpg" alt="album cover"/> 
+                <div class="card-img-overlay  d-flex flex-column justify-content-between align-items-center text-center">
+                    <div style="font-size :15px" class=" badge badge-dark badge-pill text-light my-2">Adele</div>
+                    <button class="playButton btn btn-light" data-name="Adele"><i class="fas fa-play "></i></button>
+                    <audio src="./songs/Adele.mp3" data-name="Adele"></audio>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-4 col-sm-6 col-xs-6 my-3 hoverEffect">
+            <div class="card">
+                <img class="card-img-top ImageCard" src="./images/5.jpg" alt="album cover" />
+                <div class="card-img-overlay  d-flex flex-column justify-content-between align-items-center text-center">
+                    <div style="font-size : 15px" class="badge badge-dark badge-pill text-light my-2">Billie Eilish</div>
+                    <button class="playButton btn btn-light" data-name="Billie Eilish"><i class="fas fa-play "></i></button>
+                    <audio src="./songs/Billie-Eilish.mp3" data-name="Billie Eilish"></audio>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-6 my-3 hoverEffect">
+        <div class="card">
+            <img class="card-img-top ImageCard" src="./images/7.jpg" alt="album cover"/> 
+            <div class="card-img-overlay d-flex flex-column justify-content-between align-items-center text-center">
+                <div style="font-size : 15px" class=" badge badge-dark badge-pill text-light my-2">Eminem</div>
+                <button class="playButton btn btn-light" data-name="Eminem"><i class="fas fa-play "></i></button>
+                <audio src="./songs/Eminem.mp3" data-name="Eminem"></audio>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 my-3 hoverEffect">
+        <div class="card">
+            <img class="card-img-top ImageCard" src="./images/6.jpeg" alt="album cover"/> 
+            <div class="card-img-overlay  d-flex flex-column justify-content-between align-items-center text-center">
+                <div style="font-size : 15px" class=" badge badge-dark badge-pill text-light my-2">Taylor swift</div>
+                <button class="playButton btn btn-light" data-name="Taylor swift"><i class="fas fa-play "></i></button>
+                <audio src="./songs/Taylor Swift.mp3" data-name="Taylor swift"></audio>
+            </div>
+        </div>
+    </div>
+ </div>
+  </div>
+</section>
+<!--End Of Music Lists-->
+<!--Footer-->
+<footer  class="Footer banner bg-dark p-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 my-4">
+                <h5 class="text-info">ABOUT US</h5>
+                <p class="text-light aboutContent text-justify">The Sounds Of Music is the one-stop music app for the latest to the greatest songs that you love. Play your favourite music online for free or download mp3. Enjoy from over 60 , English, Regional, Latest, Old songs and more.</p>
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Email" />
+                    <div class="input-group-append">
+                        <a href="#" class="btn btn-danger">send</a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-center my-3">
+                    <i class="fab fa-instagram fa-2x text-danger mr-3"></i>
+                    <i class="fab fa-facebook fa-2x text-primary"></i>
+                    <i class="fab fa-twitter fa-2x text-info mx-3"></i>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4 text-center">
+                <h5 class="text-primary">what is your favorite music ?</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light footerLink">Home</a></li>
+                 <li><a href="#" class="text-light footerLink">PODCASTS</a></li>
+                  <li><a href="#" class="text-light footerLink">Download App</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 my-4">
+                <h3 class="badge badge-danger text-light">listen to awesome musics with us</h3>
+                <p class="musicContent text-light text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis consectetur aut doloribus ipsa inventore iusto quaerat est! Expedita, consequuntur?</p>
+            </div>
+            <button onclick="goUpHandler()" type="button" class="upBtn btn ml-auto"><img src="./images/up.png" alt="Arrow Up"/></button>
+        </div>
+    </div>
+</footer>
+<!--End Of Footer-->   
+     <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script> 
+</body>
+</html>

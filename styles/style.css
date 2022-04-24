@@ -1,0 +1,61 @@
+*{
+    box-sizing : border-box;
+    font-family:'Courgette', cursive ;
+}
+
+
+@media(max-width : 664px){
+    .sliderIcons{
+        display: none;;
+    }
+}
+.navbarStyle{
+    background:linear-gradient(#808080ab,#000000bb);
+}
+.navbarLink{
+    color : #eee;
+}
+.navbarLink:hover{
+    color : #eeeeee5e;
+}
+
+.lh-1 , .lh-2  ,.lh-3 {
+    width : 20px;
+    height : 3px;
+    margin : 5px;
+}
+.banner{
+    background:linear-gradient(#424242,#000000bb);
+}
+
+
+.sliderIcons{
+     cursor:pointer;
+     background-color: bisque;
+     border-radius : 50%;
+     width : 35px;
+}
+
+.sliderIcons:hover{
+    background-color:cyan;
+}
+
+
+.ImageCard{
+    width : 100px;
+    height : 150px;
+}
+.hoverEffect{
+    transition: all 0.4s;
+}
+.hoverEffect:hover{
+    filter: sepia(60%);
+    transform:translateY(-10px);
+}
+.footerLink{
+    color :#2980b9;
+}
+
+.footerLink:hover{
+    text-decoration:none;
+}
